@@ -6,6 +6,10 @@ import ForecastChart from './components/ForecastChart'
 import StatsBar from './components/StatsBar'
 import './index.css'
 
+const API_BASE_URL = import.meta.env.DEV
+  ? '/api'
+  : 'https://weather-forcast-reint.onrender.com/api'
+
 export default function App() {
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState(null)
@@ -15,7 +19,7 @@ export default function App() {
     setLoading(true)
     setError(null)
     try {
-      const resp = await axios.get('https://weather-forcast-reint.onrender.com/api/chart-data', {
+      const resp = await axios.get(`${API_BASE_URL}/chart-data`, {
         params: { start, end, horizon },
       })
       setChartData(resp.data)
