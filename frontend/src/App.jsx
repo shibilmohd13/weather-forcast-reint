@@ -15,7 +15,7 @@ export default function App() {
     setLoading(true)
     setError(null)
     try {
-      const resp = await axios.get('/api/chart-data', {
+      const resp = await axios.get('https://weather-forcast-reint.onrender.com/api/chart-data', {
         params: { start, end, horizon },
       })
       setChartData(resp.data)
