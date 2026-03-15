@@ -105,7 +105,6 @@ jupyter notebook notebooks/
 ## Deployment
 
 - **App link**: *(add Vercel/Heroku URL here after deployment)*
-- **Demo video**: *(add YouTube link here)*
 
 ---
 
