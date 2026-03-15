@@ -104,7 +104,7 @@ jupyter notebook notebooks/
 
 ## Deployment
 
-- **App link**: *(add Vercel/Heroku URL here after deployment)*
+- **App link**: https://weather-forcast-reint-frontend.vercel.app/
 
 ---
 
